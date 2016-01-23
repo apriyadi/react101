@@ -1,14 +1,16 @@
 {
   "name": "react101",
-  "version": "1.0.0",
-  "description": "first react project",
+  "version": "0.0.0-semantically-released",
+  "description": "New react project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apriyadi/react101.git"
+    "url": "https://github.com/apriyadi/react101.git"
   },
   "author": "Aditia Priyadi",
   "license": "MIT",
@@ -27,6 +29,13 @@
     "babel-loader": "6.2.0",
     "babel-preset-es2015": "6.3.13",
     "babel-preset-react": "6.3.13",
+    "cz-conventional-changelog": "1.1.5",
+    "semantic-release": "^4.3.5",
     "webpack": "1.12.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
