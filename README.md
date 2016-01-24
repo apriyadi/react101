@@ -9,4 +9,6 @@
 ```bash
 npm install
 webpack -w
+
+run './public/index.html' on browser
 ```
